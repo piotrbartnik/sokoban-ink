@@ -22,6 +22,8 @@
 	},
 	"devDependencies": {
 		"@ava/typescript": "^3.0.1",
+		"@commitlint/cli": "^16.1.0",
+		"@commitlint/config-conventional": "^16.0.0",
 		"@sindresorhus/tsconfig": "^2.0.0",
 		"@types/react": "^17.0.39",
 		"ava": "^4.0.1",
@@ -29,6 +31,7 @@
 		"eslint-config-xo-react": "^0.26.0",
 		"eslint-plugin-react": "^7.28.0",
 		"eslint-plugin-react-hooks": "^4.3.0",
+		"husky": "^7.0.4",
 		"ink-testing-library": "^2.1.0",
 		"typescript": "^4.5.5",
 		"xo": "^0.39.1"
@@ -50,6 +53,13 @@
 		"rules": {
 			"react/prop-types": "off",
 			"no-console": "error"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn test",
+			"pre-push": "yarn test",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
 		}
 	}
 }
