@@ -7,13 +7,13 @@ import App from "./ui";
 const cli = meow(
 	`
 	Usage
-	  $ dinoInTerminal
+	  $ dino-in-terminal
 
 	Options
 		--name  Your name
 
 	Examples
-	  $ dinoInTerminal --name=Jane
+	  $ dino-in-terminal --name=Jane
 	  Hello, Jane
 `,
 	{
