@@ -1,12 +1,8 @@
 import React, { FC } from "react";
-import { Text } from "ink";
+import { Game } from "./components/game/game.js";
 
-const App: FC<{ name?: string }> = ({ name = "Stranger" }) => {
-	return (
-		<Text>
-			Hello, <Text color="green">{name}</Text>
-		</Text>
-	);
+const App: FC = () => {
+	return <Game />;
 };
 
 module.exports = App;
