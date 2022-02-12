@@ -7,7 +7,7 @@ export const Game: React.FC = () => {
 		<Box flexDirection="column">
 			<Player positionX={1} positionY={1} />
 
-			<Text>&#x1F916; &#x1F4E6; &#x1F538;</Text>
+			<Text> &#x1F4E6; &#x1F538;</Text>
 			<Box borderStyle="bold" width={15} height={1} />
 			<Box>
 				<Box borderStyle="bold" width={3} height={5} />
