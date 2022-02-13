@@ -1,18 +1,15 @@
 import React from "react";
 import { Box, Text } from "ink";
 
-type PlayerPropsTypes = {
+type BoxPlaceTypes = {
 	positionX: number;
 	positionY: number;
 };
 
-export const Player: React.FC<PlayerPropsTypes> = ({
-	positionX,
-	positionY,
-}) => {
+export const BoxPlace: React.FC<BoxPlaceTypes> = ({ positionX, positionY }) => {
 	return (
 		<Box marginLeft={positionX} marginTop={positionY}>
-			<Text>&#x1F916;</Text>
+			<Text>&#x1F538;</Text>
 		</Box>
 	);
 };
