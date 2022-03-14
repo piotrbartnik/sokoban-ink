@@ -9,7 +9,7 @@ type BoxPlaceTypes = {
 export const BoxPlace: React.FC<BoxPlaceTypes> = ({ positionX, positionY }) => {
 	return (
 		<Box marginLeft={positionX} marginTop={positionY}>
-			<Text>&#x1F538;</Text>
+			<Text>&#x1F9F1;</Text>
 		</Box>
 	);
 };
